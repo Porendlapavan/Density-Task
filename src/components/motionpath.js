@@ -15,7 +15,7 @@ function MotionPathAnimation() {
 function annimate(){
   const imageelement=image.current.getBoundingClientRect();
   const element = elementRef.current;
-      if(imageelement.left>window.innerWidth/2){
+      if(imageelement.left>(window.innerWidth)*1/2){
         gsap.to(element, {
         duration: 2, // Animation duration
         motionPath: {

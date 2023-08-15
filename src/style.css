@@ -3,232 +3,256 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body{
-  overflow-x: hidden;
+body {
+    overflow-x: hidden;
 }
 
 @layer base {
-  html {
-    font-family: 'Quicksand', sans-serif;
-  }
+    html {
+        font-family: 'Quicksand', sans-serif;
+    }
 }
 
 @layer utilities {
-  @layer components {
-    /* width */
-      ::-webkit-scrollbar {
-        width: 12px;
-      }
-    
-      /* Track */
-      ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 2px grey;
-        border-radius: 10px;
-      }
-    
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #ddaafa;
-        border-radius: 8px;
-      }
-    
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #e6c5fa;
-      }
-  }
+    @layer components {
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 2px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #ddaafa;
+            border-radius: 8px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e6c5fa;
+        }
+    }
 }
 
 
-body{
-    margin:0;
-    font-family: sans-serif,inter;
-    height:100vh;
+body {
+    margin: 0;
+    font-family: sans-serif, inter;
+    height: 100vh;
     background-color: white;
 }
 
-.container{
-    width:80%;
+.container {
+    width: 80%;
     margin: auto;
 }
 
-nav >img{
-    width:40px;  
+nav>img {
+    width: 40px;
     border-radius: 10px;
 }
 
-nav{
-    display:flex;
-    position:fixed;
+nav {
+    display: flex;
+    position: fixed;
     z-index: 1;
-    margin:0;
+    margin: 0;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     font-weight: 500;
-    margin:0;
-    height:80px;
+    margin: 0;
+    height: 80px;
 
 }
-.nav-items{
+
+.nav-items {
     list-style-type: none;
-    display:flex;
-    
+    display: flex;
+
 }
 
-.nav-items > li{
-    padding:15px; 
+.nav-items>li {
+    padding: 15px;
     cursor: pointer;
 }
 
 /* first box styling */
-.buttons{
+.buttons {
     background-color: black;
-    padding:13px;
+    padding: 13px;
     font-size: 13px;
     border-radius: 30px;
-    color:white;
+    color: white;
     font-weight: 500;
     margin-right: 10px;
     cursor: pointer;
 }
 
 
-.firstcard{
-    display:flex;
+.firstcard {
+    display: flex;
     background-color: #EFECFF;
-    padding:50px;
+    padding: 50px;
     border-radius: 15px;
     margin-bottom: 0px;
 }
-.firstcard > div> h1{
+
+.firstcard>div>h1 {
     font-size: 50px;
     font-weight: bolder;
 
 }
-.firstcard > div >div{
+
+.firstcard>div>div {
     display: flex;
 }
-.firstcard > div > div > div  {
-    margin:0;
+
+.firstcard>div>div>div {
+    margin: 0;
     margin-left: 30px;
 }
-.firstcard > div > div > div >p{
-    margin:0;
+
+.firstcard>div>div>div>p {
+    margin: 0;
     font-size: 12px;
 }
-.firstcard > div > div > div > div {
-    margin:0;
+
+.firstcard>div>div>div>div {
+    margin: 0;
     font-size: smaller;
-    color:gold
+    color: gold
 }
 
 
 /* applebutton styling */
-.Applebutton{
+.Applebutton {
     background-color: black;
-    color:white;
-    width:auto;
+    color: white;
+    width: auto;
     border-radius: 5px;
-    padding:10px;
+    padding: 10px;
     cursor: pointer;
 }
-.Applebutton--matter > p{
+
+.Applebutton--matter>p {
     margin: 0;
     font-size: 13px;
-    margin-left:10px;
-    padding:1;
+    margin-left: 10px;
+    padding: 1;
 }
-.Applebutton--matter > h6{
+
+.Applebutton--matter>h6 {
     margin: 0;
     font-size: 13px;
-    padding:0;
+    padding: 0;
 }
-.Applebutton > div{
+
+.Applebutton>div {
     display: flex;
     align-items: center;
 }
 
 /* second-box styling */
 
-.Second-box-content{
-    display:flex;
+.Second-box-content {
+    display: flex;
     align-items: center;
-    padding:40px;
+    padding: 40px;
     margin-top: 30px;
-    margin:auto;
-}
-.Second-box-content >div{
-    padding:30px;
-    line-height: 2rem;
-    width:33vw;
+    margin: auto;
 }
 
-.annimatep::-webkit-scrollbar-corner{
-  opacity: 1;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out 0.1s;
+.Second-box-content>div {
+    padding: 30px;
+    line-height: 2rem;
+    width: 33vw;
 }
+
+.annimatep::-webkit-scrollbar-corner {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
 /* third box */
 
-.ThirdBox{
+.ThirdBox {
     display: flex;
-    margin:auto;
+    margin: auto;
     align-items: center;
     text-align: center;
     overflow: hidden;
     flex-direction: row;
-    
-    
+
+
 }
 
-.scroll{
+.scroll {
     /* width:1000px;   */
-    padding:20px;
-    margin:20px;
+    padding: 20px;
+    margin: 20px;
     border-radius: 20px;
     background-color: rgb(226, 168, 168);
     text-align: left;
-    display:grid;
+    display: grid;
     animation: scroll 1s linear infinite;
-    
+
 }
 
-@keyframes scroll{
-    0%{
-        transform:translateX(0);
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
     }
-    100%{
-        transform:translateX(-100%);
+
+    100% {
+        transform: translateX(-100%);
     }
 }
+
 /* footer  styling*/
-footer{
+footer {
     text-align: center;
     align-items: center;
-    padding:20px;
+    padding: 20px;
     border-top: solid #b2beb5 0.01rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-footer > a >img{
-    width:40px;  
+footer>a>img {
+    width: 40px;
     border-radius: 10px;
 }
 
-footer >h1{
-    margin:0;
-    color:rgb(7, 66, 206);
+footer>h1 {
+    margin: 0;
+    color: rgb(7, 66, 206);
     font-size: 20px;
 }
-footer > div{
-    padding:30px;
+
+footer>div {
+    padding: 30px;
 }
-footer>p{
+
+footer>p {
     align-items: center;
     font-size: 14px;
-    padding:20px;
+    padding: 20px;
 }
-.icons-align{
+
+.icons-align {
     align-items: center;
-    display:flex
+    display: flex
+}
+
+.icons-align-1 {
+    margin-right: 20px;
 }

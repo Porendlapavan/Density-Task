@@ -7,7 +7,9 @@ import Sixthbox from './components/Sixthbox';
 import Feature from './components/Features';
 import Test from './components/Test';
 import Work from './components/Work';
+import Job from './components/Job';
 import Footer from './components/Footer';
+
 
 
 export default function App()
@@ -23,6 +25,7 @@ export default function App()
             <Feature />
             <Test />
             <Work />
+            <Job/>
             <Footer />
        </div>
     )

@@ -11,8 +11,8 @@ export default function Footer(){
             <a href="#"> <img src={Logo}/></a>
             <h1>ahead</h1>
             <div className='icons-align'>
-                <div>
-                    <p><LocationOnIcon sx={{borderRadius:"50%",backgroundColor:"#76b5c5",fontSize: 25,marginRight:"4px",padding:"2px;"}}/>AugustraBe 26, 10117 Berlin</p>
+                <div className='icons-align-1'>
+                    <p><LocationOnIcon sx={{borderRadius:"50%",backgroundColor:"#76b5c5",fontSize: 25,marginRight:"4px",padding:"2px;"}}/>Hyderabad, India</p>
                 </div>
                 <div>
                     <p><EmailIcon sx={{borderRadius:"50%",backgroundColor:"#76b5c5",fontSize: 25,marginRight:"4px",padding:"3px"}}/> hi@ahead-app.com</p>

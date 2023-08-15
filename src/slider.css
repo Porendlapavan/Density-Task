@@ -1,0 +1,17 @@
+.horizontalScrollBox {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrollContainer {
+  display: flex;
+  overflow: hidden; /* Hide the scrollbar */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  padding: 1rem;
+}
+
+/* Optional: Add some styles to the content within the scroll container */
+.scrollContainer > * {
+  flex: 0 0 auto;
+  margin-right: 1rem;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../Images/pack-man_motion.png'
+import './rotate.css'
 
 export default function work(){
     return (
@@ -10,7 +11,7 @@ export default function work(){
                 </h1>
                 <div data-aos="fade-right" className='shadow-xl  bg-white rounded-2xl w-4/5'>
                     <div className='p-10 space-y-4'>
-                        <img className="w-10 my-6" src={Logo}/>
+                        <img  className="pendulum w-10 my-6" src={Logo}/>
                         <h1 className='font-bold'>
                             About us
                         </h1>

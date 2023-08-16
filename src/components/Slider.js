@@ -5,6 +5,7 @@ import AOS from 'aos';
 import { useEffect } from "react";
 import "../slider.css"
 import { useRef } from "react";
+import VisibleDiv from "./Visibile";
 
 
 const Slider = () => {
@@ -33,6 +34,18 @@ function effect (){
 
     animationId = requestAnimationFrame(scroll);
   };
+  // const divRef=useRef(null);
+  
+  // function scrollinto(){
+  //   if(divRef!=undefined){
+  //   divRef.current.scrollIntoView({
+  //   block: "start",
+  //   inline: "nearest",
+  // });
+
+  //   }
+   
+  // }
 
   return (
     <div data-aos="fade-left" className="flex m-auto overflow-hidden w-auto">
@@ -78,7 +91,7 @@ function effect (){
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
             emoji="😟"
           />
-          <SliderCard
+          <SliderCard 
             bgColor="bg-red-100"
             title="You get a promotion at work"
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
@@ -86,6 +99,7 @@ function effect (){
           />
         </div>
       </div>
+      {/* <VisibleDiv onVisible={scrollinto}/> */}
     </div>
   );
 };

@@ -23,20 +23,20 @@ export default function Improvement(){
             
             <div className="p-10 m-auto pl-15 w-[80%]" onScroll={scrolled} ref={divRef} style={{height:"300px",overflow:"hidden", overflowY:"scroll"}}>
                 <ul className='lineadding'>
-                    <li style={{filter:(highlight == 0 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
+                    <li style={{filter:(highlight == 0 ? "none" : 'blur(0.75px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p></li>
                     
-                    <li style={{filter:(highlight == 1 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>you and your motivation don't have a long-term relationship.</h1>
+                    <li style={{filter:(highlight == 1 ? "none" : 'blur(0.75px)')}}><h1 className='text-1xl font-bold'>you and your motivation don't have a long-term relationship.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p>
                     </li>
 
-                    <li style={{filter:(highlight == 2 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>you and your motivation don't have a long-term relationship.</h1>
+                    <li style={{filter:(highlight == 2 ? "none" : 'blur(0.75px)')}}><h1 className='text-1xl font-bold'>you and your motivation don't have a long-term relationship.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p>
                     </li>
-                    <li style={{filter:(highlight == 3 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
+                    <li style={{filter:(highlight == 3 ? "none" : 'blur(0.75px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p></li>
                     
-                    <li style={{filter:(highlight == 4 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
+                    <li style={{filter:(highlight == 4 ? "none" : 'blur(0.75px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p></li>
                 </ul>
             </div>

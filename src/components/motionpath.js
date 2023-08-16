@@ -6,13 +6,13 @@ import VisibleDiv from './Visibile'
 
 gsap.registerPlugin(MotionPathPlugin); // Register the plugin
 
-function MotionPathAnimation({path}) {
+function MotionPathAnimation({path,dimention}) {
   const elementRef = useRef(null);
   const  image=useRef(null);
   function annimate(){
     const imageelement=image.current.getBoundingClientRect();
     const element = elementRef.current;
-    if(imageelement.left>(window.innerWidth)*3/4){
+    if(imageelement.left>(window.innerWidth)*dimention){
         gsap.to(element, {
         duration: 2, // Animation duration
         motionPath: {

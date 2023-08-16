@@ -33,7 +33,7 @@ const Fourth = () => {
             <h1 data-aos="zoom-in-right" data-aos-duration="1500" className="text-4xl font-bold p-6">
                 Does this sound familiar...
             </h1>
-            <Motionpath path="M500 50 Q300 0 100 50"/>
+            <Motionpath path="M500 50 Q300 0 100 50" dimention={0.75}/>
         </div>
         <div className="mb-20">
           <Slider />

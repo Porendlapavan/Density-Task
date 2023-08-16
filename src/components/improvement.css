@@ -27,8 +27,10 @@
   top: 0;
   bottom: 0;
   width: 2px;
+  margin: 0;
   height:100px; /* Adjust line width as needed */
   background-color: #5983e5; /* Adjust line color as needed */
 }
+
 
 

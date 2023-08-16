@@ -5,11 +5,11 @@ import './rotate.css'
 export default function work(){
     return (
         <div className='pl-10 bg-[#F3F1FF] rounded-3xl w-[90%] m-auto flex'>
-            <div className='space-y-5 w-3/4'>
-                <h1 data-aos="fade-right" className="text-3xl p-4 font-black mb-10">
+            <div className='space-y-5 w-3/ py-10'>
+                <h1 data-aos="fade-right" data-aos-duration="1500" className="text-3xl p-4 font-black mb-10">
                     Work With Us
                 </h1>
-                <div data-aos="fade-right" className='shadow-xl  bg-white rounded-2xl '>
+                <div data-aos="fade-right" data-aos-duration="1500" className='shadow-xl  bg-white rounded-2xl '>
                     <div className='p-10 space-y-4'>
                         <img  className="pendulum w-10 my-6" src={Logo}/>
                         <h1 className='font-bold'>
@@ -31,7 +31,7 @@ export default function work(){
                 </div>
             </div>
             <div className="flex flex-col items-end space-y-3 p-10">
-                <h1 data-aos="fade-left" className='font-bold text-3xl text-cyan-500 mb-10'>ahead</h1>
+                <h1 data-aos="fade-left" data-aos-duration="1500" className='font-bold text-3xl text-cyan-500 mb-10'>ahead</h1>
                 <div
                 data-aos="fade-up"
                 className="space-y-4 items-end flex flex-col h-96 overflow-y-scroll no-scrollbar bg-scroll-blue-500"

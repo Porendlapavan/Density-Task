@@ -7,7 +7,7 @@ const JobCard = ({ position, role, location, salary }) => {
     return (
         <div>
             <div
-                className={`transition-all ease-in-out delay-100 rounded-t-2xl px-4 pt-10 flex-col w-96 space-y-3 h-fit scroll-smooth text-lg 
+                className={`transition-all ease-in-out delay-100 rounded-t-2xl px-4 pt-10 flex-col w-50 space-y-3 h-fit scroll-smooth text-lg 
                     ${show ? 'bg-[#ffee99] cursor-pointer' : 'bg-[#FEFBEC] rounded-b-2xl pb-10'}`}
                 onMouseOver={() => setShow(true)}
                 onMouseOut={() => setShow(false)}

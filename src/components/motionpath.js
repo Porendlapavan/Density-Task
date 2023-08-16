@@ -6,8 +6,7 @@ import VisibleDiv from './Visibile'
 
 gsap.registerPlugin(MotionPathPlugin); // Register the plugin
 
-function MotionPathAnimation() {
-
+function MotionPathAnimation({path}) {
   const elementRef = useRef(null);
   const  image=useRef(null);
 
@@ -15,11 +14,11 @@ function MotionPathAnimation() {
 function annimate(){
   const imageelement=image.current.getBoundingClientRect();
   const element = elementRef.current;
-      if(imageelement.left>(window.innerWidth)*1/2){
+      if(imageelement.left>(window.innerWidth)*3/4){
         gsap.to(element, {
         duration: 2, // Animation duration
         motionPath: {
-          path: "M500 50 Q300 0 100 50", // SVG path data for the motion path
+          path: `${path}`, // SVG path data for the motion path
           align: "self", // Align the element with the path
           autoRotate: false, // Auto-rotate the element based on the path's curvature
         },

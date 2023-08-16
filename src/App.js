@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Firstbox from './components/Firstbox';
 import Fourthbox from './components/Fourthbox';
-import Meetapp from './components/Meetapp'
+import Meetapp from './components/Meetapp';
+import Improvement from './components/Improvement';
 import Sixthbox from './components/Sixthbox';
 import Feature from './components/Features';
 import Test from './components/Test';
@@ -21,6 +22,7 @@ export default function App()
             <Firstbox />
             <Fourthbox/>
             <Meetapp />
+            <Improvement />
             <Sixthbox />
             <Feature />
             <Test />

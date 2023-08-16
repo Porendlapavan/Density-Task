@@ -1,6 +1,7 @@
 
 .lineadding>li {
   padding-left: 10px;
+  font-size: larger;
   width:90%;
   list-style: none;
   position: relative;
@@ -28,9 +29,22 @@
   bottom: 0;
   width: 2px;
   margin: 0;
-  height:100px; /* Adjust line width as needed */
+  height:120px; /* Adjust line width as needed */
   background-color: #5983e5; /* Adjust line color as needed */
 }
 
+.rotation {
+  position: absolute;
+  top:-22px;
+  transform: translate(0,10px);
+  animation: rotate 2s linear infinite;
+}
 
-
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

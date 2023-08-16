@@ -1,7 +1,7 @@
 import React from 'react'
 export default function Sixthbox(){
     return (
-              <div className="grid grid-cols-3 justify-between my-6">
+        <div className="grid grid-cols-3 justify-between my-10">
         <div className=" p-6 pb-20 font-bold text-4xl">
           EQ beats IQ
         </div>

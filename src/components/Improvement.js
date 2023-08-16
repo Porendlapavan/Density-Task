@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Motionpath from './motionpath'
 import './improvement.css'
-export default function improvement(){
+export default function Improvement(){
+    const divRef=useRef(null)
+    const [highlight,setlight]=useState(0);
+    function scrolled(){
+        const scrollpos=(divRef.current.scrollHeight-300)/5;
+        setlight(Math.floor(divRef.current.scrollTop/scrollpos));
+        console.log(Math.floor(divRef.current.scrollTop/scrollpos));
+    }
     return(
         <div >
             <div className="flex">
@@ -11,25 +18,25 @@ export default function improvement(){
                             Self improvement.Ugh.
                         </h1>
                 </div>
-            <Motionpath path="M 1686.688 843.553 C 1579.062 739.417 1509.999 834.692 1251.528 850.534" dimention={0.5}/>
+            <Motionpath path="M 1686.688 843.553 C 1579.062 739.417 1371.787 913.831 1255.071 824.968" dimention={0.5}/>
             </div>
             
-            <div className="p-10 m-auto pl-15" >
+            <div className="p-10 m-auto pl-15 w-[80%]" onScroll={scrolled} ref={divRef} style={{height:"300px",overflow:"hidden", overflowY:"scroll"}}>
                 <ul className='lineadding'>
-                    <li><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
+                    <li style={{filter:(highlight == 0 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p></li>
                     
-                    <li><h1 className='text-1xl font-bold'>you and your motivation don't have a long-term relationship.</h1>
+                    <li style={{filter:(highlight == 1 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>you and your motivation don't have a long-term relationship.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p>
                     </li>
 
-                    <li><h1 className='text-1xl font-bold'>you and your motivation don't have a long-term relationship.</h1>
+                    <li style={{filter:(highlight == 2 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>you and your motivation don't have a long-term relationship.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p>
                     </li>
-                    <li><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
+                    <li style={{filter:(highlight == 3 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p></li>
                     
-                    <li><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
+                    <li style={{filter:(highlight == 4 ? "none" : 'blur(1px)')}}><h1 className='text-1xl font-bold'>it's not a easy as 1-2-3.</h1>
                     <p className='p-2'>The journey of change may be long,but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).</p></li>
                 </ul>
             </div>

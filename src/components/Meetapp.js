@@ -1,13 +1,14 @@
 import React from 'react'
 import Logo from '../Images/pack-man_motion.png'
 import flower from '../Images/flower-8642.png'
+import './improvement.css'
 export default function Meetapp()
 {
     return(
         
         <div>
-            <div className='p-0 my-0 ml-[90%] mb-[0%] '>
-                <img  src={flower} />
+            <div className='p-0 ml-[90%] mb-[0%] ' style={{position:"relative"}}>
+                <img className='rotation' src={flower} />    
             </div>
             <div className='bg-[#fef6f0] p-7 mb-20 rounded-3xl py-20'>
            

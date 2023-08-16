@@ -9,12 +9,10 @@ gsap.registerPlugin(MotionPathPlugin); // Register the plugin
 function MotionPathAnimation({path}) {
   const elementRef = useRef(null);
   const  image=useRef(null);
-
-
-function annimate(){
-  const imageelement=image.current.getBoundingClientRect();
-  const element = elementRef.current;
-      if(imageelement.left>(window.innerWidth)*3/4){
+  function annimate(){
+    const imageelement=image.current.getBoundingClientRect();
+    const element = elementRef.current;
+    if(imageelement.left>(window.innerWidth)*3/4){
         gsap.to(element, {
         duration: 2, // Animation duration
         motionPath: {
@@ -23,9 +21,9 @@ function annimate(){
           autoRotate: false, // Auto-rotate the element based on the path's curvature
         },
       });
-      }
-
+    }
   }
+
   return (
     <div>
       <div ref={elementRef} style={{color:"black"}}><img ref={image} src={Packmon} style={{width:"50px",marginLeft:"430px",height:"50px"}}/></div>

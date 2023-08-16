@@ -2,7 +2,7 @@
 import React from "react";
 import sign from '../Images/sign.jpg'
 
-export default function Note() {
+export default function Test() {
   return (
     <div className="flex items-center flex-col p-20 my-16 gap-2">
       <p className="mb-0 text-lg">We take privacy seriously</p>

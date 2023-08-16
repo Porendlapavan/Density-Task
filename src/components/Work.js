@@ -4,9 +4,9 @@ import './rotate.css'
 
 export default function work(){
     return (
-        <div className='p-10 bg-[#F3F1FF] rounded-3xl w-[90%] m-auto flex'>
+        <div className='pl-10 bg-[#F3F1FF] rounded-3xl w-[90%] m-auto flex'>
             <div className='space-y-5 w-3/4'>
-                <h1 data-aos="fade-right" className="text-3xl font-black mb-10">
+                <h1 data-aos="fade-right" className="text-3xl p-4 font-black mb-10">
                     Work With Us
                 </h1>
                 <div data-aos="fade-right" className='shadow-xl  bg-white rounded-2xl '>
